@@ -66,7 +66,7 @@ for i in range(1,20):
         print sendData
 
         request = requests.post(
-            url='https://oapi.dingtalk.com/robot/send?access_token=34f426e847b7a9bdf66dfd0242fa34bf00ce52f3a21a7eb6684e22508bd815ce',
+            url='https://oapi.dingtalk.com/robot/send?access_token=',
             data=sendData, headers=header)
         print request.content
 
@@ -92,7 +92,7 @@ for i in range(1,20):
         print sendData
 
         request = requests.post(
-            url='https://oapi.dingtalk.com/robot/send?access_token=36b214d767ae5ca8e04c8ec79ef30044b6e65446bf55d0c02fc3769bb1a1c302',
+            url='https://oapi.dingtalk.com/robot/send?access_token=',
             data=sendData, headers=header)
         print request.content
 
