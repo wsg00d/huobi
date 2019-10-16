@@ -9,7 +9,7 @@ for i in range(1,20):
     time.sleep(1)
     print i
     nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    f2=open('/home/wangsong/huobi/bchrun.txt','w+')
+    f2=open('/home/wa/huobi/bchrun.txt','w+')
     f2.write(nowtime)
     f2.close()
     btcurl = "https://api.huobi.pro/market/history/kline?period=1min&size=1&symbol=bchusdt"
@@ -66,7 +66,7 @@ for i in range(1,20):
         print sendData
 
         request = requests.post(
-            url='https://oapi.dingtalk.com/robot/send?access_token=34f426e847b7a9bdf66dfd0242fa34bf00ce52f3a21a7eb6684e22508bd815ce',
+            url='https://oapi.dingtalk.com/robot/send?access_token=34f426e8684e22508bd815ce',
             data=sendData, headers=header)
         print request.content
         # if True:
@@ -91,7 +91,7 @@ for i in range(1,20):
         print sendData
 
         request = requests.post(
-            url='https://oapi.dingtalk.com/robot/send?access_token=36b214d767ae5ca8e04c8ec79ef30044b6e65446bf55d0c02fc3769bb1a1c302',
+            url='https://oapi.dingtalk.com/robot/send?access_token=36b214d767ae5cab1a1c302',
             data=sendData, headers=header)
         print request.content
 
